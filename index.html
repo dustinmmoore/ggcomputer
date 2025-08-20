@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Computer Repair - Your Trusted Local Techs</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="bi bi-pc-display me-2"></i>GG Computer Repair
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="tel:864-442-5855">
+                            <i class="bi bi-telephone me-2"></i>Call Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Dynamic Background -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Professional IT Solutions for Your Business
+                    </h1>
+                    <p class="lead text-white-50 mb-4">Expert computer repair, network setup, and technology services designed specifically for businesses in Easley, SC and surrounding areas.</p>
+
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="tel:864-442-5855" class="btn btn-primary btn-lg">
+                            <i class="bi bi-telephone me-2"></i>Call Now
+                        </a>
+                        <a href="#services" class="btn btn-outline-light btn-lg">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Notice Scrolling Bar -->
+    <div class="notice-scrolling-bar">
+        <div class="notice-content">
+            <span class="notice-text">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                We are no longer accepting residential clients. GG Computer Repair now offers business-to-business sales and services only.
+            </span>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">Local Service from Local Techs</h2>
+                <p class="lead">Professional technology solutions for your business</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Cloud Backup -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cloud Backup">
+                        </div>
+                        <div class="service-card-content">
+
+                            <h3>Cloud Backup</h3>
+                            <p>Safeguard your sensitive data with our HIPAA-compliant cloud backup solutions. We understand the importance of privacy and security.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Virus Removal -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Virus Removal">
+                        </div>
+                        <div class="service-card-content">
+
+                            <h3>Virus Removal</h3>
+                            <p>Eliminate digital threats swiftly and effectively with our virus removal service. Our expert technicians will thoroughly cleanse your system.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Drive Replacement -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1601737487795-dab272f52420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drive Replacement">
+                        </div>
+                        <div class="service-card-content">
+
+                            <h3>Drive Replacement</h3>
+                            <p>Upgrade your system or replace failing drives with our expert drive replacement service. Whether seeking improved performance or addressing hardware issues.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Antivirus -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Antivirus">
+                        </div>
+                        <div class="service-card-content">
+
+                            <h3>Antivirus</h3>
+                            <p>Choose from our range of antivirus solutions tailored to your needs. Whether you prefer cutting-edge AI-based protection or top consumer choices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- On-Site Service -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="On-Site Service">
+                        </div>
+                        <div class="service-card-content">
+
+                            <h3>On-Site Service</h3>
+                            <p>Experience convenience and efficiency with our on-site service option. We bring our expertise directly to your doorstep for troubleshooting and repairs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Free Recycling -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Free Recycling">
+                        </div>
+                        <div class="service-card-content">
+
+                            <h3>Free Recycling</h3>
+                            <p>Join us in our commitment to sustainability with our free recycling service. Safely dispose of your electronic devices while helping protect the environment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Screen Replacement -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Screen Replacement">
+                        </div>
+                        <div class="service-card-content">
+
+                            <h3>Screen Replacement</h3>
+                            <p>Revitalize your laptop with our expert screen replacement service, restoring crisp clarity to your digital world. Trust our skilled technicians.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom PC Build -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Custom PC Build">
+                        </div>
+                        <div class="service-card-content">
+
+                            <h3>Custom PC Build</h3>
+                            <p>Don't settle for off-the-shelf computers that don't meet your specific needs - let us build you a custom PC that's tailor-made just for you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network Setup -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="900">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Network Setup">
+                        </div>
+                        <div class="service-card-content">
+
+                            <h3>Network Setup</h3>
+                            <p>Professional network installation and configuration for your business. Secure, reliable networking solutions to keep your team connected and productive.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">Frequently Asked Questions</h2>
+                <p class="lead">Common questions about our business services</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion faq-accordion" id="faqAccordion" data-aos="fade-up">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do you still service residential clients?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No, we are no longer accepting residential clients. GG Computer Repair now 
+                                    offers business-to-business sales and services only.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    What areas do you service?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We are based in Easley, SC and provide services to businesses in the surrounding area. 
+                                    We also offer remote support services for clients anywhere.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Is your data backup service HIPAA compliant?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, our cloud backup solutions are HIPAA-compliant. We ensure that your records, 
+                                    files, and confidential information remain protected and secure at all times.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Do you offer free diagnosis?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer a complimentary deep dive analysis at our computer repair center. 
+                                    Our expert technicians will conduct a thorough assessment of your device, 
+                                    pinpointing any issues or potential problems—free, with no strings attached.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    How does your remote support work?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our remote support service allows us to diagnose and fix problems efficiently 
+                                    using secure connections and advanced tools. This saves you time and eliminates 
+                                    the need to wait for a technician to arrive on-site.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold mb-4">Professional Computer Repair Services</h2>
+                    <p class="lead mb-5">Trusted by businesses and individuals in Easley, SC. Contact us for reliable technology solutions and expert support.</p>
+                </div>
+            </div>
+
+
+
+            <!-- Main Contact Form -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-wrapper" data-aos="fade-up">
+                        <div class="contact-form-header text-center mb-4">
+                            <h3 class="mb-3">Schedule Your Service</h3>
+                            <p class="text-muted">Complete the form below and we'll contact you within 72 hours to discuss your needs</p>
+                        </div>
+                        
+                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" name="first_name" placeholder="Enter your first name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Enter your last name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Business Email *</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="your@company.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="company" class="form-label">Company Name *</label>
+                                    <input type="text" class="form-control" id="company" name="company_name" placeholder="Your company name" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="issue" class="form-label">Service Needed *</label>
+                                    <select class="form-select" id="issue" name="service_needed" required>
+                                        <option value="">Select the service you need...</option>
+                                        <option value="virus-removal">Virus/Malware Removal</option>
+                                        <option value="slow-computer">Slow Computer Performance</option>
+                                        <option value="data-recovery">Data Recovery</option>
+                                        <option value="hardware-repair">Hardware Repair/Replacement</option>
+                                        <option value="screen-replacement">Screen Replacement</option>
+                                        <option value="cloud-backup">Cloud Backup Setup</option>
+                                        <option value="custom-pc">Custom PC Build</option>
+                                        <option value="network-issues">Network/Internet Issues</option>
+                                        <option value="antivirus-setup">Antivirus Installation</option>
+                                        <option value="onsite-service">On-Site Service Request</option>
+                                        <option value="consultation">General Consultation</option>
+                                        <option value="other">Other Issue</option>
+                                    </select>
+                                </div>
+                                <!-- Hidden subject field for better email organization -->
+                                <input type="hidden" name="_subject" value="New Service Request from GG Computer Repair Website">
+                                
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Tell us about your technology needs</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Describe your technology challenges or what services you're interested in..."></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5 py-3">
+                                        <i class="bi bi-calendar-check me-2"></i>
+                                        Submit Request
+                                    </button>
+                                    <p class="text-muted mt-3 mb-0">
+                                        <i class="bi bi-shield-check me-1"></i>
+                                        We respect your privacy. Your information will never be shared.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Company Info -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand mb-4">
+                        <h4 class="text-white mb-3">
+                            <i class="bi bi-pc-display me-2 text-primary"></i>
+                            GG Computer Repair
+                        </h4>
+                        <p class="text-white-50 mb-4">
+                            Professional IT solutions and computer repair services exclusively for businesses in Easley, SC and surrounding areas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="footer-links">
+                                <li><a href="#services">Cloud Backup</a></li>
+                                <li><a href="#services">Virus Removal</a></li>
+                                <li><a href="#services">Drive Replacement</a></li>
+                                <li><a href="#services">Antivirus</a></li>
+                                <li><a href="#services">On-Site Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="footer-links">
+                                <li><a href="#services">Free Recycling</a></li>
+                                <li><a href="#services">Screen Replacement</a></li>
+                                <li><a href="#services">Custom PC Build</a></li>
+                                <li><a href="#services">Network Setup</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Info</h5>
+                    <ul class="footer-links">
+                        <li><a href="#faq">Frequently Asked Questions</a></li>
+                        <li><a href="#contact">Get Consultation</a></li>
+                        <li><a href="#services">Service Areas</a></li>
+                        <li>
+                            <span class="text-white-50">
+                                <i class="bi bi-clock me-2"></i>
+                                Call Hours: Mon, Tue, Thu, Fri 10AM-6PM
+                            </span>
+                        </li>
+                        <li>
+                            <span class="text-primary fw-bold">
+                                <i class="bi bi-calendar-check me-2"></i>
+                                Appointments Only
+                            </span>
+                        </li>
+                        <li>
+                            <span class="text-primary fw-bold">
+                                <i class="bi bi-building me-2"></i>
+                                B2B Services Only
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li class="mb-3">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-geo-alt text-primary me-3 mt-1"></i>
+                                <div>
+                                    <strong class="text-white d-block">Address</strong>
+                                    <a href="https://maps.google.com/?q=1003+Gentry+Memorial+Hwy,+Easley,+SC+29640" target="_blank" class="text-white-50 text-decoration-none">
+                                        1003 Gentry Memorial Hwy<br>Easley, SC 29640
+                                        <i class="bi bi-box-arrow-up-right ms-1" style="font-size: 0.8rem;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-telephone text-primary me-3"></i>
+                                <div>
+                                    <strong class="text-white d-block">Phone</strong>
+                                    <a href="tel:864-442-5855" class="text-white-50 text-decoration-none">864-442-5855</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-envelope text-primary me-3"></i>
+                                <div>
+                                    <strong class="text-white d-block">Email</strong>
+                                    <a href="mailto:office@ggcomputerrepair.com" class="text-white-50 text-decoration-none">office@ggcomputerrepair.com</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <hr class="mt-5 mb-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-white-50 mb-0">
+                        &copy; 2025 GG Computer Repair. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-badges">
+                        <span class="badge bg-primary me-2">
+                            <i class="bi bi-shield-check me-1"></i>HIPAA Compliant
+                        </span>
+                        <span class="badge bg-success">
+                            <i class="bi bi-geo-alt me-1"></i>Local Business
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Form Submission with Formspree
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+                form.classList.add('was-validated');
+            } else {
+                // Let Formspree handle the submission
+                // Show loading state
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Sending...';
+                submitBtn.disabled = true;
+                
+                // Note: Formspree will redirect to their thank you page by default
+                // To customize, add _next hidden field or use AJAX
+            }
+        });
+
+        // Smooth Scroll - only for anchor links, not tel: links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                // Only prevent default for internal anchor links
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offset = 80;
+                        const targetPosition = target.offsetTop - offset;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Navbar Animation
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
