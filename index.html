@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <i class="bi bi-pc-display me-2"></i>GG Computer Repair
+                <img src="assets/logos/gg.avif" alt="GG Computer Repair" class="navbar-logo">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -27,6 +27,9 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#faq">FAQ</a>
@@ -46,13 +49,16 @@
 
     <!-- Hero Section with Dynamic Background -->
     <section id="home" class="hero-section">
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
         <div class="container">
             <div class="row justify-content-center align-items-center min-vh-100">
                 <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <h1 class="display-4 fw-bold text-white mb-4">
-                        Professional IT Solutions for Your Business
-                    </h1>
-                    <p class="lead text-white-50 mb-4">Expert computer repair, network setup, and technology services designed specifically for businesses in Easley, SC and surrounding areas.</p>
+                    <div class="hero-logo-container mb-4">
+                        <img src="assets/logos/gg.avif" alt="GG Computer Repair" class="hero-logo">
+                    </div>
+                    <div class="typing-container mb-4">
+                        <p class="lead text-white-50 typing-text" id="typingText"></p>
+                    </div>
 
                     <div class="d-flex gap-3 justify-content-center flex-wrap">
                         <a href="tel:864-442-5855" class="btn btn-primary btn-lg">
@@ -72,10 +78,12 @@
         <div class="notice-content">
             <span class="notice-text">
                 <i class="bi bi-info-circle-fill me-2"></i>
-                We are no longer accepting residential clients. GG Computer Repair now offers business-to-business sales and services only.
+                GG Computer Repair now exclusively serves businesses. We no longer provide residential services, focusing solely on business-to-business sales and IT support.
             </span>
         </div>
     </div>
+
+
 
     <!-- Services Section -->
     <section id="services" class="py-5">
@@ -217,6 +225,62 @@
         </div>
     </section>
 
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">Meet Our Expert Team</h2>
+                <p class="lead">Experienced professionals dedicated to solving your technology challenges</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Team Member 1 -->
+                <div class="col-lg-5 col-md-6" data-aos="fade-up">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Lead Technician">
+                        </div>
+                        <div class="team-content">
+                            <h4>John Smith</h4>
+                            <p class="team-role">Lead Technician & Co-Founder</p>
+                            <p class="team-bio">With over 15 years of experience in computer repair and network administration, John specializes in business IT solutions and HIPAA-compliant data management. He holds certifications in CompTIA A+, Network+, and Microsoft Azure.</p>
+                            <div class="team-specialties">
+                                <span class="specialty-tag">Network Setup</span>
+                                <span class="specialty-tag">Cloud Solutions</span>
+                                <span class="specialty-tag">Data Recovery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Senior Technician">
+                        </div>
+                        <div class="team-content">
+                            <h4>Michael Johnson</h4>
+                            <p class="team-role">Senior Technician & Security Specialist</p>
+                            <p class="team-bio">Michael brings 12 years of expertise in cybersecurity and virus removal. He's passionate about protecting businesses from digital threats and specializes in custom PC builds and hardware diagnostics.</p>
+                            <div class="team-specialties">
+                                <span class="specialty-tag">Cybersecurity</span>
+                                <span class="specialty-tag">Custom Builds</span>
+                                <span class="specialty-tag">Virus Removal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
     <!-- FAQ Section -->
     <section id="faq" class="py-5 bg-light">
         <div class="container">
@@ -310,6 +374,8 @@
         </div>
     </section>
 
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section py-5">
@@ -376,6 +442,9 @@
                                 <!-- Hidden subject field for better email organization -->
                                 <input type="hidden" name="_subject" value="New Service Request from GG Computer Repair Website">
                                 
+                                <!-- Honeypot field for spam protection -->
+                                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                                
                                 <div class="col-12">
                                     <label for="message" class="form-label">Tell us about your technology needs</label>
                                     <textarea class="form-control" id="message" name="message" rows="4" placeholder="Describe your technology challenges or what services you're interested in..."></textarea>
@@ -398,6 +467,9 @@
         </div>
     </section>
 
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
     <!-- Footer -->
     <footer class="footer py-5">
         <div class="container">
@@ -405,10 +477,9 @@
                 <!-- Company Info -->
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-brand mb-4">
-                        <h4 class="text-white mb-3">
-                            <i class="bi bi-pc-display me-2 text-primary"></i>
-                            GG Computer Repair
-                        </h4>
+                        <div class="mb-3">
+                            <img src="assets/logos/gg.avif" alt="GG Computer Repair" class="footer-logo">
+                        </div>
                         <p class="text-white-50 mb-4">
                             Professional IT solutions and computer repair services exclusively for businesses in Easley, SC and surrounding areas.
                         </p>
@@ -530,62 +601,6 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-
-        // Form Submission with Formspree
-        const form = document.getElementById('contactForm');
-        form.addEventListener('submit', function(event) {
-            if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-                form.classList.add('was-validated');
-            } else {
-                // Let Formspree handle the submission
-                // Show loading state
-                const submitBtn = form.querySelector('button[type="submit"]');
-                const originalText = submitBtn.innerHTML;
-                submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Sending...';
-                submitBtn.disabled = true;
-                
-                // Note: Formspree will redirect to their thank you page by default
-                // To customize, add _next hidden field or use AJAX
-            }
-        });
-
-        // Smooth Scroll - only for anchor links, not tel: links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                // Only prevent default for internal anchor links
-                if (href.startsWith('#')) {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        const offset = 80;
-                        const targetPosition = target.offsetTop - offset;
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-
-        // Navbar Animation
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('navbar-scrolled');
-            } else {
-                navbar.classList.remove('navbar-scrolled');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
